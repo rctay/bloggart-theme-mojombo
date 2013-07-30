@@ -1,6 +1,6 @@
----
-layout: default
----
+{% extends "base.html" %}
+{% block title %}{{post.title|escape}} - {{config.blog_name}}{% endblock %}
+{% block body %}
 <div id="post">
 {{ content }}
 </div>
@@ -13,3 +13,4 @@ layout: default
       <li id="next">&raquo; <a href="{{config.url_prefix}}{{next.path}}">{{ next.title }}</a>
     {% endif %}
   </ul>
+{% endblock %}
