@@ -66,6 +66,10 @@ ul.posts {
     line-height: 1.75em;
   }
 
+    ul.posts li p {
+      margin-left: 1em
+    }
+
   ul.posts span {
     color: #aaa;
     font-family: Monaco, "Courier New", monospace;
