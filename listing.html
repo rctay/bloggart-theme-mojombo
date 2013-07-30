@@ -6,7 +6,7 @@
       <li>
       <span>{{post.published_tz|date:"d M Y"}}</span> &raquo; <a href="{{ post.path }}">{{ post.title }}</a><br/>
       <div class="post">
-        {{post.summary}}
+        {{post.summary|safe}}
       </div>
       <p>
         <a href="{{config.url_prefix}}{{post.path}}">Read more</a>
