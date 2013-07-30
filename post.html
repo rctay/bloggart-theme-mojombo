@@ -2,7 +2,9 @@
 {% block title %}{{post.title|escape}} - {{config.blog_name}}{% endblock %}
 {% block body %}
 <div id="post">
-{{ content }}
+  <h1>{{post.title|escape}}</h1>
+  <p class="meta">{{post.published_tz|date:"r"}}</p>
+  {{post.rendered}}
 </div>
 
   <ul class="posts">
