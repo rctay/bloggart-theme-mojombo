@@ -3,7 +3,13 @@
 {% block body %}
   <ul class="posts">
     {% for post in posts %}
-      <li><span>{{post.published_tz|date:"d M Y"}}</span> &raquo; <a href="{{ post.path }}">{{ post.title }}</a></li>
+      <li>
+      <span>{{post.published_tz|date:"d M Y"}}</span> &raquo; <a href="{{ post.path }}">{{ post.title }}</a><br/>
+      {{post.summary}}
+      <p>
+        <a href="{{config.url_prefix}}{{post.path}}">Read more</a>
+      </p>
+      </li>
     {% endfor %}
   </ul>
 {% endblock %}
