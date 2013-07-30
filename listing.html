@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{config.blog_name}}{% endblock %}
+{% block body %}
+  <ul class="posts">
+    {% for post in posts %}
+      <li><span>{{post.published_tz|date:"d M Y"}}</span> &raquo; <a href="{{ post.path }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
