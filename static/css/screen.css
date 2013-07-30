@@ -92,12 +92,11 @@ ul.posts {
   margin-bottom: 2em;
 }
 
-  .site .title a.current {
+  .site .title a#current {
     color: #a00;
-    text-decoration: none;
   }
 
-  .site .title a.current:hover {
+  .site .title a#current:hover {
     color: black;
   }
 
