@@ -202,3 +202,16 @@ ul.posts {
   #related h2 {
     margin-bottom: 1em;
   }
+
+/* Archive */
+ul.archive ul {
+  list-style-type: none;
+}
+
+ul.archive > li {
+  margin-top: 0.5em;
+}
+
+ul.archive > li:first-child {
+  margin-top: 0;
+}
