@@ -15,6 +15,10 @@
    <link rel="stylesheet" type="text/css" media="screen" href="{{config.url_prefix}}/static/{{config.theme}}/css/screen.css" />
    {% endblock %}
 
+   {% if config.rel_me %}
+   <link rel="me" href="{{config.rel_me}}" />
+   {% endif %}
+   {% block head %}{% endblock %}
 </head>
 <body>
 
