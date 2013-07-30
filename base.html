@@ -40,9 +40,11 @@
     </div>
     <div class="contact">
       <p>
-        <a href="http://github.com/mojombo/">github.com/mojombo</a><br />
-        <a href="http://twitter.com/mojombo/">twitter.com/mojombo</a><br />
-        <a href="http://flickr.com/photos/mojombo/">flickr.com/photos/mojombo</a>
+      {% for sidebar in config.sidebars %}
+        {% for entry in sidebar.1 %}
+          {{entry}}{% if not forloop.last %}<br/>{% endif %}
+        {% endfor %}
+      {% endfor %}
       </p>
     </div>
   </div>
