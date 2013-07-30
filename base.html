@@ -24,6 +24,7 @@
 
 <div class="site">
   <div class="title">
+    <a href="{{config.url_prefix}}/">{{config.author_name}}</a>
     <a href="{{config.url_prefix}}/"{% ifequal generator_class "IndexContentGenerator" %} id="current"{% endifequal %}>home</a>
     <a href="{{config.url_prefix}}/archive/"{% ifequal generator_class "ArchiveIndexContentGenerator" %} id="current"{% else %}{% ifequal generator_class "ArchivePageContentGenerator" %} id="current"{% endifequal %}{% endifequal %}>archive</a>
     {% block menu %}{% endblock %}
