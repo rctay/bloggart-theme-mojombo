@@ -4,7 +4,7 @@
 <div id="post">
   <h1>{{post.title|escape}}</h1>
   <p class="meta">{{post.published_tz|date:"r"}}</p>
-  {{post.rendered}}
+  {{post.rendered|safe}}
 </div>
 
   <ul class="posts">
