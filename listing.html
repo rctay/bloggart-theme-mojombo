@@ -7,13 +7,13 @@
       <span>{{post.published_tz|date:"d M Y"}}</span> &raquo; <a href="{{ post.path }}">{{ post.title }}</a><br/>
       <div class="post">
         {{post.summary|safe}}
+        <p>
+          <a href="{{config.url_prefix}}{{post.path}}">Read more</a>
+          {% if config.disqus_forum %} |
+          <a href="{{config.url_prefix}}{{post.path}}#disqus_thread" class="readmore">Comments</a>
+          {% endif %}
+        </p>
       </div>
-      <p>
-        <a href="{{config.url_prefix}}{{post.path}}">Read more</a>
-        {% if config.disqus_forum %} |
-        <a href="{{config.url_prefix}}{{post.path}}#disqus_thread" class="readmore">Comments</a>
-        {% endif %}
-      </p>
       </li>
     {% endfor %}
   </ul>
