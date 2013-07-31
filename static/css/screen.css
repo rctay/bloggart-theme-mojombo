@@ -66,7 +66,7 @@ ul.posts {
     line-height: 1.75em;
   }
 
-    ul.posts li p {
+    ul.posts li .post {
       margin-left: 1em
     }
 
