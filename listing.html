@@ -17,6 +17,13 @@
       </li>
     {% endfor %}
   </ul>
+  {% if prev_page %}
+    <a id="prev" href="{{config.url_prefix}}{{prev_page}}">&laquo; Newer</a>
+  {% endif %}
+  {% if prev_page and next_page %}<br/>{% endif %}
+  {% if next_page %}
+    <a id="next" href="{{config.url_prefix}}{{next_page}}">&raquo; Older</a>
+  {% endif %}
   {% if config.disqus_forum %}
     <script type="text/javascript">
     //<![CDATA[
