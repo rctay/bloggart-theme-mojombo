@@ -39,15 +39,15 @@
         Design courtesy of <a href="https://github.com/mojombo/mojombo.github.io/">mojombo</a>
       </p>
     </div>
+    {% for sidebar in config.sidebars %}
     <div class="contact">
       <p>
-      {% for sidebar in config.sidebars %}
         {% for entry in sidebar.1 %}
           {{entry}}{% if not forloop.last %}<br/>{% endif %}
         {% endfor %}
-      {% endfor %}
       </p>
     </div>
+    {% endfor %}
   </div>
 </div>
 
