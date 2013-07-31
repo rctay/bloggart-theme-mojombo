@@ -8,11 +8,11 @@
 </div>
 
   <ul class="posts">
-    {% if prev %}
-      <li id="prev">&laquo; <a href="{{config.url_prefix}}{{prev.path}}">{{ prev.title }}</a>
-    {% endif %}
     {% if next %}
-      <li id="next">&raquo; <a href="{{config.url_prefix}}{{next.path}}">{{ next.title }}</a>
+      <li id="next">&laquo; <a href="{{config.url_prefix}}{{next.path}}">{{ next.title }}</a>
+    {% endif %}
+    {% if prev %}
+      <li id="prev">&raquo; <a href="{{config.url_prefix}}{{prev.path}}">{{ prev.title }}</a>
     {% endif %}
   </ul>
 
