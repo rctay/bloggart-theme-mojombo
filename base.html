@@ -43,7 +43,7 @@
     <div class="contact">
       <p>
         {% for entry in sidebar.1 %}
-          {{entry}}{% if not forloop.last %}<br/>{% endif %}
+          {{entry|safe}}{% if not forloop.last %}<br/>{% endif %}
         {% endfor %}
       </p>
     </div>
