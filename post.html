@@ -3,7 +3,14 @@
 {% block body %}
 <div class="post">
   <h1>{{post.title|escape}}</h1>
-  <p class="meta">{{post.published_tz|date:"r"}}</p>
+  <p class="meta">{{post.published_tz|date:"r"}}
+  {% if post.tags %}
+    | Filed under
+    {% for tag in post.tag_pairs %}
+      <a href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% endif %}
+    {% endfor %}
+  {% endif %}
+  </p>
   {{post.rendered|safe}}
 </div>
 
