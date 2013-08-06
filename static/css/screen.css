@@ -83,6 +83,10 @@ ul.posts {
       color: black;
     }
 
+    ul.posts li.post p:first-of-type {
+      margin-top: 0;
+    }
+
     ul.posts li.post p.more {
       margin-top: -1em;
     }
