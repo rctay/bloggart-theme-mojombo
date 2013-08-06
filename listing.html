@@ -16,11 +16,11 @@
     {% endfor %}
   </ul>
   {% if prev_page %}
-    <a id="prev" href="{{config.url_prefix}}{{prev_page}}" class="meta">&laquo; Newer</a>
+  &laquo; <a id="prev" href="{{config.url_prefix}}{{prev_page}}">Newer</a>
   {% endif %}
   {% if prev_page and next_page %}<br/>{% endif %}
   {% if next_page %}
-    <a id="next" href="{{config.url_prefix}}{{next_page}}" class="meta">&raquo; Older</a>
+  &raquo; <a id="next" href="{{config.url_prefix}}{{next_page}}">Older</a>
   {% endif %}
   {% if config.disqus_forum %}
     <script type="text/javascript">
