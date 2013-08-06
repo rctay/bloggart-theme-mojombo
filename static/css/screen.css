@@ -89,6 +89,7 @@ ul.posts {
 
     ul.posts li.post p.more {
       margin-top: -1em;
+      font-size: 80%;
     }
 
   ul.posts span {
