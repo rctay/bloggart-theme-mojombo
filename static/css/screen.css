@@ -83,6 +83,10 @@ ul.posts {
       color: black;
     }
 
+    ul.posts li.post p.more {
+      margin-top: -1em;
+    }
+
   ul.posts span {
     color: #aaa;
     font-family: Monaco, "Courier New", monospace;

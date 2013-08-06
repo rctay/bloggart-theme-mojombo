@@ -6,7 +6,7 @@
       <li class="post">
         <span>{{post.published_tz|date:"d M Y"}}</span> &raquo; <h1><a href="{{ post.path }}">{{ post.title }}</a></h1>
         {{post.summary|safe}}
-        <p>
+        <p class="more">
           <a href="{{config.url_prefix}}{{post.path}}">Read more</a>
           {% if config.disqus_forum %} |
           <a href="{{config.url_prefix}}{{post.path}}#disqus_thread" class="readmore">Comments</a>
