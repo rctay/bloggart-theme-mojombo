@@ -66,8 +66,21 @@ ul.posts {
     line-height: 1.75em;
   }
 
-    ul.posts li .post {
-      margin-left: 1em
+  ul.posts li.post {
+    line-height: 1.5em;
+  }
+
+    ul.posts li.post h1 {
+      display: inline-block;
+    }
+
+    ul.posts li.post h1 a {
+      text-decoration: none;
+      color: #a00;
+    }
+
+    ul.posts li.post h1 a:hover {
+      color: black;
     }
 
   ul.posts span {
@@ -163,6 +176,9 @@ ul.posts {
 
   .post h1 {
     margin-bottom: 0;
+  }
+
+  .post h1:first-child {
     border-bottom: 1px solid #eee;
   }
 
