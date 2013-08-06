@@ -87,8 +87,11 @@ ul.posts {
       margin-top: 0;
     }
 
-    ul.posts li.post .more {
+    ul.posts li.post p + .more {
       margin-top: -1.2em;
+    }
+
+    ul.posts li.post .more {
       font-size: 80%;
     }
 
