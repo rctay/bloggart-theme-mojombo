@@ -92,6 +92,15 @@ ul.posts {
       font-size: 80%;
     }
 
+      ul.posts li.post p.more a {
+        color: #aaa;
+        text-decoration: none;
+      }
+
+      ul.posts li.post p.more a:hover {
+        color: black;
+      }
+
     ul.posts li > span {
       color: #aaa;
       font-family: Monaco, "Courier New", monospace;
