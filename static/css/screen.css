@@ -87,17 +87,17 @@ ul.posts {
       margin-top: 0;
     }
 
-    ul.posts li.post p.more {
+    ul.posts li.post .more {
       margin-top: -1.2em;
       font-size: 80%;
     }
 
-      ul.posts li.post p.more a {
+      ul.posts li.post .more a {
         color: #aaa;
         text-decoration: none;
       }
 
-      ul.posts li.post p.more a:hover {
+      ul.posts li.post .more a:hover {
         color: black;
       }
 
