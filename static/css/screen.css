@@ -92,11 +92,11 @@ ul.posts {
       font-size: 80%;
     }
 
-  ul.posts span {
-    color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
-    font-size: 80%;
-  }
+    ul.posts li > span {
+      color: #aaa;
+      font-family: Monaco, "Courier New", monospace;
+      font-size: 80%;
+    }
 
 /*****************************************************************************/
 /*
