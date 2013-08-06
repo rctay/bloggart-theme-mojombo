@@ -68,6 +68,7 @@ ul.posts {
 
   ul.posts li.post {
     line-height: 1.5em;
+    margin-top: 2em;
   }
 
     ul.posts li.post h1 {
