@@ -51,6 +51,13 @@ table {
   font: 100%;
 }
 
+blockquote {
+  padding-left: 0.7em;
+  border-left: 0.25em solid #888;
+  font-style: italic;
+  color: #888;
+}
+
 /*****************************************************************************/
 /*
 /* Home
